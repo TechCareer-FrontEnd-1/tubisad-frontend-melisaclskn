@@ -6,37 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hamit Mızrak" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta name="description" content="Html5 and content" />
+    <link rel="stylesheet" href="/homework1/css/homework_register.css">
     <title>register</title>
 </head>
 
 <body>
     <!-- start codes -->
-    <h1>Create Account</h1>
-    <p>Get started with your free account</p>
-    <button>Login via Twitter</button><br><br>
-    <button>Login via Facebook</button>
-    <div>Or</div>
-    <form action="#" method="get" autocomplete="true">
+    <div class="container">
+        <div class="content">
 
-        <input type="text" id="name" required placeholder="Fullname" autofocus> <br /><br />
-        <input type="text" id="email" required placeholder="email adress"> <br /><br />
-        <select name="countryCode" id="countryCode">
-            <option  value="90" Selected>Turkey (+90)</option>
-            <option  value="1">UK (+44)</option>
-            <option value="213">Algeria (+213)</option>
-            <option value="376">Andorra (+376)</option>
-            <option value="244">Angola (+244)</option>
-        </select></br></br>
-        <select name="job" id="job" class="form">
-            <option value="job_types">select job type</option>
-            <option value="job_types">1</option>
-            <option value="job_types">2</option>
-        </select><br /><br />
-            <input type="password" id="password" required placeholder="Create password"> <br />
+            <div class="text">
+                <h1>Create Account</h1>
+            </div>
 
-           
-    <!-- ends codes -->
+            <div class="text">
+                <p>Get started with your free account</p>
+            </div>
+
+            <div class="button">
+                <button class="button btn btn-twitter"><i class="fa-brands fa-twitter"></i>Login via Twitter</button>
+            </div>
+            <div class="button">
+                <button class="button btn btn-facebook"><i class="fa-brands fa-facebook-f"></i>Login via Facebook</button>
+            </div>
+
+            <h2><span>Or</span></h2>
+
+            <div class="form-container">
+                <form action="#" method="get" autocomplete="true">
+                    <div class="form-input">
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <input type="text" id="name" required placeholder="Fullname" autofocus> <br /><br />
+                    </div>
+                    <div class="form-input">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <input type="text" id="email" required placeholder="email adress"> <br /><br />
+                    </div>
+                    <div class="form-input">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <select name="countryCode" id="countryCode">
+                            <option value="90" Selected>Turkey (+90)</option>
+                            <option value="1">UK (+44)</option>
+                            <option value="213">Algeria (+213)</option>
+                            <option value="376">Andorra (+376)</option>
+                            <option value="244">Angola (+244)</option>
+                        </select></br></br>
+                    </div>
+                    <div class="form-input">
+                        <div class="icon"><i class="fa-solid fa-rectangle-list"></i></div>
+                        <select name="job" id="job" class="form">
+                            <option value="job_types">select job type</option>
+                            <option value="job_types">1</option>
+                            <option value="job_types">2</option>
+                        </select><br /><br />
+                    </div>
+                    <div class="form-input">
+                        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                        <input type="password" id="password" required placeholder="Create password"> <br />
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- ends codes -->
 </body>
 
 </html>
