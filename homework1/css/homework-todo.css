@@ -1,0 +1,56 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    background-color: aqua;
+    height: 100vh;
+}
+.content{
+    padding: 50px;
+    background-color: blue;
+}
+.todo{
+    border-radius: 10px;
+    background-color: beige;
+    border:2px solid rgb(140, 140, 140);
+   
+    padding: 10px;
+    width:500px;
+    
+}
+.edit{
+    border-radius: 10px;
+    background-color: beige;
+    padding:10px;
+    border:2px solid rgb(140, 140, 140);
+}
+.todo h1{
+    font-size: 1.5rem;
+    color:rgb(56, 56, 56)
+}
+.todo-input{
+ width:80%;
+ height:40px;
+ border:none;
+  border-radius: 2px;
+
+}
+.todo-input:active{
+    border:none;
+}
+.btn-add{
+    height:40px;
+    width:60px;
+    background-color: palevioletred;
+    border:none;
+    border-radius: 2px;
+    color:#fff;
+    font-size: 20px;
+}
+.btn-add:hover{
+    cursor: pointer;
+}
