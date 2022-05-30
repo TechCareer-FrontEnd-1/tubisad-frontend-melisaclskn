@@ -1,0 +1,15 @@
+Cross-Origin Resource Sharing (Kökenler arası kaynak paylaşımı) anlamına gelen CORS, bir kökende çalışan web uygulamasının, farklı bir kökende yer alan web uygulamasına erişim izni kontrolünü sağlayan mekanizmadır. 
+
+Web sayfamızda bir içeriğin başka bir web sayfasından aldığımzı düşünelim.
+Bu durumda o sayfadan aldığımız içerik bizim sunucumuzda görüntülenip bir kaynak paylaşımı söz konusu olacaktır.
+Bu gibi durumlarda CORS ile kaynak sunucunun nasıl davranması gerektiği belirlenir.
+Cors kökler arası isteklerin güvenli olup olmadığına kara vermek için tarayıcı ve sunucu arasında bir etkileşiminin nasıl yapılacağını tanımlarç
+Örneğin farklı bir kaynaktan veri çektiğimizde CORS hataları almamız yüksektir çünkü
+Ajax istekleri default olarak SAME-ORIGIN-POLICY nedeniyle yasaklanmıştır.
+
+SAME-ORIGIN-POLICY
+ İki origin’in birbiri ile aynı olabilmesi için protokol, host ve port bilgilerinin aynı olması gereklidir. Yani eğer iki adres bilgisi aynı olsa bile, farklı port değerlerine sahip ise same-origin olma durumundan çıkarlar.
+http://domain-a.com
+http://domain-b.com
+
+CORS bir güvenlik çözümü değildir. CORS pek çok tarayıcı üzerinden kolayca devre dışı bırakılabilmektedir. Genel amacı içerik sahipliğinin korunmak ve sunucu kaynaklarının daha efektif yönetilmesini sağlamaktır

@@ -1,0 +1,21 @@
+CDN ( Content Delivery Network)
+Açılımı content delivery netwoktür.( İçerik Dağıtım Ağı)
+CDN üzerinden html,css,font vb dosyaları bize sunulur.
+CDN üzerinden bu dosyaları çekip projelerimizde kullanmamızın amacı projemizin açılma süresini düşük tutmaktır çünkü eğer bu dosyaları doğrudan projemize eklersek projeyi ağırlaştırıp, yavaşlatabilir.
+Integrity
+Günümüzde de web siteleri çoğunlukla CDN kullanarak oluşturuluyor.
+Ancak örneğin bir saldırgan CDN’deki dosyaları değiştirirse projemizi
+mahvedebilir.
+Bunu önlemek amacıyla iki HTML etiketi <link> veya <script>
+tagının içine integrity attribute’ünü ekleyip bu durumu önleyebiliriz.
+integrity attribute, projemize eklemek istediğimiz harici kaynağın
+şifrelenmiş bir hashini içerir. (sha-256 vb gibi algoritmalar ile hashlenir).
+Tarayıcı daha sonra getirilen kaynağın
+Hash’inin ve html attribütündeki hash’in aynı olup olmadığını kontrol eder.
+Integrity denetimi pozitifse, tarayıcı eklediğimiz dosyayı (örneğin bir css  dosyası eklediysek) sayfamıza uygular.
+Bu özellik eski tarayıcılar tarafından desteklenmez.
+Bu tarayıcılarda her kaynak değişikliğinde ayarlanması gerekebilir.
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs8" crossorigin="anonymous">
+
+Yukarıdaki örnekte, kaynak bootstrap.min.css , Base64 ile kodlanmış SHA-384 karması ile bütünlüğü açısından kontrol edilir. 
