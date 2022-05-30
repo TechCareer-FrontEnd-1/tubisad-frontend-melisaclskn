@@ -16,13 +16,31 @@ body{
     height:70%;
     background-color: bisque;
 }
+.box1{
+    position: relative;
+    display: flex;
+    padding:0;
+    align-items: flex-start;
+}
+.login{
+    position: absolute;
+    padding:50px;
+    height: 100%;
+    width:100%; 
+    padding-top:10pxs;
+    background-color: #fff;
+}
 .img{
     height:100%;
     width:100%;
     padding:0;
-    background-size: cover;
+    object-fit: cover;
 }
-
+.line{
+    text-decoration: dashed;
+    outline:0;
+    border-width: 0 0 2.5px;
+}
 .input{
     outline:0;
     border-width: 0 0 2.5px;
@@ -36,20 +54,7 @@ body{
    
   }
 
-.box1{
-      position: relative;
-      display: flex;
-      padding:0;
-      align-items: flex-start;
-  }
-  .login{
-      position: absolute;
-      padding:50px;
-      height: 100%;
-      width:100%; 
-      padding-top:10pxs;
-      background-color: #fff;
-  }
+
 /* .login-button{
     width:100%;
     height: 5em;
@@ -67,6 +72,17 @@ a{
     text-decoration: none;
     color:blueviolet;
 }
+a:hover{
+    color:rgba(137, 43, 226, 0.797);
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 .btn-login{
     width:100%;
     height:50px;
@@ -78,9 +94,7 @@ a{
 .btn-login:hover{
     background-color: rgba(137, 43, 226, 0.689);
 }
-.btn-login:visited{
-    background-color: rgba(137, 43, 226, 0.689);
-}
+
 .btn-login:active{
     background-color: rgba(137, 43, 226, 0.689);
 }
