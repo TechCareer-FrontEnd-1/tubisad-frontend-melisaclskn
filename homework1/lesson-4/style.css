@@ -89,7 +89,10 @@ header{
     z-index:-1;
     height:40rem;
     padding-top:9rem;
+
 }
+
+/* ############################################################################ */
 
 /* main */
 .box{
@@ -113,14 +116,15 @@ header{
 .icon{
     margin: auto;
     position: absolute;
-    color:rgba(255, 255, 255, 0.832);
+    color:rgba(255, 255, 255, 0.74);
     
     font-size:6em;
     width:100%;
     height:100%;
     padding: 25px;
-    text-shadow:10px 10px 20px rgba(128, 128, 128, 0.688);
+    text-shadow:5px 5px 20px rgb(103, 221, 90);
 }
+/* ############################################################################ */
 
 /* footer */
 footer{
